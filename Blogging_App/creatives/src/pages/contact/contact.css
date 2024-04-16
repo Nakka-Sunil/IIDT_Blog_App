@@ -1,0 +1,79 @@
+.contact-form {
+  display: flex;
+  justify-content: space-between;
+  height: 70vh;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+}
+
+.container {
+  display: flex;
+  flex-wrap: nowrap;
+  width: 90rem;
+  margin: 40px;
+}
+
+.form-section {
+  width: 60%;
+  padding: 10px;
+}
+
+.image-section {
+  width: 30%;
+  padding: 10px;
+  display: flex; /* Added flexbox for image and button alignment */
+  align-items: center; /* Vertically align image and button */
+}
+
+@media screen and (max-width: 768px) {
+  .form-section,
+  .image-section {
+    width: 100%;
+  }
+  .image-section {
+    flex-direction: column; /* Stack image and button on smaller screens */
+  }
+}
+
+.heading {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  box-sizing: border-box;
+  resize: vertical;
+}
+
+.submit {
+  background-color: #04AA6D;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  margin-left: 10px; /* Adjust margin as needed */
+}
+
+.img {
+  width: 1200px; /* Make image full width within its section */
+  border-radius: 10px;
+  margin: 0; /* Remove margins for better alignment */
+  margin-top: 50px;
+}
